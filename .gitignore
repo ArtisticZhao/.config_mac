@@ -1,0 +1,8 @@
+# ignore everything
+/*
+/*/
+
+# ... but these:
+!/.gitignore
+!/joshuto/
+!README.md
