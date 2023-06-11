@@ -5,4 +5,5 @@
 # ... but these:
 !/.gitignore
 !/joshuto/
+!/tmux/
 !README.md
