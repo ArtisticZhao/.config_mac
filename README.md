@@ -32,8 +32,8 @@
 | Plugins         | Keymap       | Function                                     |
 |-----------------|--------------|----------------------------------------------|
 | vimode          | esc esc      | enable vimode                                |
-| history-search  | :arrow_up    | history-substring-search-up                  |
-|                 | :arrow_down  | history-substring-search-down                |
+| history-search  | :arrow_up:   | history-substring-search-up                  |
+|                 | :arrow_down: | history-substring-search-down                |
 |                 | C-R          | history-incremental-pattern-search-backward  |
 |                 | <VImode> k   | history-substring-search-up                  |
 |                 | <VImode> j   | history-substring-search-down                |
