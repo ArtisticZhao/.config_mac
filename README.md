@@ -1,10 +1,17 @@
 # Configurations!
 
 ## item
+- zsh
 - tmux
 - joshuto
 
 ## Install
+
+### zsh
+1. Install and set zsh as default shell
+2. `ln -s $HOME/.config/zsh/dotzshrc $HOME/.zshrc`
+3. `source ~/.zshrc`  
+ The zim framework and zsh plugins will installed automatically.
 
 ### tmux
 1. `brew install tmux`

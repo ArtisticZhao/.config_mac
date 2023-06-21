@@ -1,0 +1,30 @@
+
+# ------------------  ENV  ------------------
+PATH="$PATH:/opt/homebrew/bin"
+PATH="$PATH:/Users/az/Library/Python/3.9/bin"
+PATH="$PATH:/Users/az/.cargo/bin"
+export PATH
+
+export ALL_PROXY=127.0.0.1:7890
+export http_proxy="http://127.0.0.1:7890"
+export https_proxy="http://127.0.0.1:7890"
+export HOMEBREW_NO_AUTO_UPDATE=true
+export EDITOR=nvim
+
+# ------------------  alias  ------------------
+alias sz="source ~/.zshrc"
+alias c="clear"
+alias ll="ls -la"
+# alias of programs
+alias ctags="`brew --prefix`/bin/ctags"
+alias vim="nvim"
+alias lg="lazygit"
+alias ra="joshuto"
+alias p="proxychains4"
+# venv of python
+alias sv="source .venv/bin/activate"
+alias dv="deactivate"
+# git
+alias gc="git clone"
+# others
+alias get_idf='. $HOME/projects/esp/esp-idf/export.sh'

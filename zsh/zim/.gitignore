@@ -4,7 +4,4 @@
 
 # ... but these:
 !/.gitignore
-!/joshuto/
-!/tmux/
-!README.md
-!/zsh/
+!/.zimrc
