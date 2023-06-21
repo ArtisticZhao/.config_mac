@@ -79,6 +79,7 @@ alias sz="source ~/.zshrc"
 alias c="clear"
 alias ll="ls -la"
 # alias of programs
+alias t="tmux"
 alias ctags="`brew --prefix`/bin/ctags"
 alias vim="nvim"
 alias lg="lazygit"
