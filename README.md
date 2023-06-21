@@ -1,6 +1,6 @@
 # Configurations!
 
-## item
+## Configure items
 - zsh
 - tmux
 - joshuto
@@ -37,21 +37,18 @@
 
 ## Usage
 
-### zsh keybinds
-
-| Plugins         | Keymap       | Function                                     |
-|-----------------|--------------|----------------------------------------------|
-| vimode          | esc esc      | enable vimode                                |
-| history-search  | :arrow_up:   | history-substring-search-up                  |
-|                 | :arrow_down: | history-substring-search-down                |
-|                 | C-R          | history-incremental-pattern-search-backward  |
-|                 | <VImode> k   | history-substring-search-up                  |
-|                 | <VImode> j   | history-substring-search-down                |
-| autosuggestions | C-W          | autosuggestion jump forward word             |
-|                 | C-E          | autosuggestion jump backward and delete word |
-| z.lua           | z <keyword>  | jump to path contains the keyword            |
-|                 | zb <keyword> | jump out path contains the keyword           |
-| fzf             | C-T          | Paste the selected files and directories
-                                   onto the command-line                        |
-|                 | C-R          | fzf command history                          |
-|                 | M-C          | cd into the selected directory               |
+| Plugins         | Keymap           | Function                                                       |
+|-----------------|------------------|----------------------------------------------------------------|
+| vimode          | ESC ESC          | enable vimode                                                  |
+| history-search  | :arrow_up:       | history-substring-search-up                                    |
+|                 | :arrow_down:     | history-substring-search-down                                  |
+|                 | C-R              | history-incremental-pattern-search-backward                    |
+|                 | \<VImode\> k     | history-substring-search-up                                    |
+|                 | \<VImode\> j     | history-substring-search-down                                  |
+| autosuggestions | C-W              | autosuggestion jump forward word                               |
+|                 | C-E              | autosuggestion jump backward and delete word                   |
+| z.lua           | $ z \<keyword\>  | jump to path contains the keyword                              |
+|                 | $ zb \<keyword\> | jump out path contains the keyword                             |
+| fzf             | C-T              | Paste the selected files and directories onto the command-line |
+|                 | C-R              | fzf command history                                            |
+|                 | M-C              | cd into the selected directory                                 |
