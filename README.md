@@ -24,3 +24,20 @@
 
 ### joshuto
 1. `cargo install --git https://github.com/kamiyaa/joshuto.git --force`
+
+## Usage
+
+### zsh keybinds
+
+| Plugins         | Keymap       | Function                                     |
+|-----------------|--------------|----------------------------------------------|
+| vimode          | esc esc      | enable vimode                                |
+| history-search  | :arrow_up    | history-substring-search-up                  |
+|                 | :arrow_down  | history-substring-search-down                |
+|                 | C-R          | history-incremental-pattern-search-backward  |
+|                 | <VImode> k   | history-substring-search-up                  |
+|                 | <VImode> j   | history-substring-search-down                |
+| autosuggestions | C-W          | autosuggestion jump forward word             |
+|                 | C-E          | autosuggestion jump backward and delete word |
+| z.lua           | z <keyword>  | jump to path contains the keyword            |
+|                 | zb <keyword> | jump out path contains the keyword           |

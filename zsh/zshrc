@@ -1,3 +1,66 @@
+#                              _
+#                      _______| |__  _ __ ___
+#                     |_  / __| '_ \| '__/ __|
+#                      / /\__ \ | | | | | (__
+#                     /___|___/_| |_|_|  \___|
+
+#######################################################################
+############################ 历史记录功能 #############################
+#######################################################################
+# 存储历史到文件中
+HISTFILE=~/.zsh_history
+HISTSIZE=1000
+SAVEHIST=1000
+# Remove superfluous blanks from each command line being added to the history
+# list
+setopt histreduceblanks
+# Remove command lines from the history list when the first character on the
+# line is a space, or when one of the expanded aliases contains a leading space
+setopt histignorespace
+# Do not enter command lines into the history list if they are duplicates of the
+# previous event.
+setopt histignorealldups
+# 允许多个zsh之间共享记录
+setopt sharehistory
+
+
+#######################################################################
+################################ 补全系统 #############################
+#######################################################################
+# Use modern completion system
+autoload -Uz compinit
+compinit
+# Enable ls colors
+zstyle ':completion:*' auto-description 'specify: %d'
+zstyle ':completion:*' completer _expand _complete _correct _approximate
+zstyle ':completion:*' format 'Completing %d'
+zstyle ':completion:*' group-name ''
+# 两次tab后 显示一个菜单可以进行选择
+zstyle ':completion:*' menu select=2
+# 增加彩色的补全菜单, 并且兼容mac
+if whence dircolors >/dev/null; then
+  eval "$(dircolors -b)"
+  zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+  alias ls='ls --color'
+else
+  export CLICOLOR=1
+  zstyle ':completion:*:default' list-colors ''
+fi
+zstyle ':completion:*' list-prompt %SAt %p: Hit TAB for more, or the character to insert%s
+zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=* l:|=*'
+# zstyle ':completion:*' menu select=2
+zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
+zstyle ':completion:*' use-compctl false
+zstyle ':completion:*' verbose true
+
+zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
+zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
+
+# Automatically use menu completion after the second consecutive request for
+# completion
+setopt automenu
+# 忽略没有匹配错误，以在命令中使用通配符
+unsetopt nomatch
 
 # ------------------  ENV  ------------------
 PATH="$PATH:/opt/homebrew/bin"
