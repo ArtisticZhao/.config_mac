@@ -4,6 +4,7 @@
 - zsh
 - tmux
 - joshuto
+- fzf
 
 ## Install
 
@@ -25,6 +26,15 @@
 ### joshuto
 1. `cargo install --git https://github.com/kamiyaa/joshuto.git --force`
 
+### fzf
+1. Install fzf  
+  `brew install fzf`
+2. To install useful key bindings and fuzzy completion  
+  `(brew --prefix)/opt/fzf/install --xdg`
+3. Install requirements: fd, rg.  
+  `brew install fd` for fast find  
+  `brew install rg` for grep content in files  
+
 ## Usage
 
 ### zsh keybinds
@@ -41,3 +51,7 @@
 |                 | C-E          | autosuggestion jump backward and delete word |
 | z.lua           | z <keyword>  | jump to path contains the keyword            |
 |                 | zb <keyword> | jump out path contains the keyword           |
+| fzf             | C-T          | Paste the selected files and directories
+                                   onto the command-line                        |
+|                 | C-R          | fzf command history                          |
+|                 | M-C          | cd into the selected directory               |

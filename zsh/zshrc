@@ -91,3 +91,6 @@ alias dv="deactivate"
 alias gc="git clone"
 # others
 alias get_idf='. $HOME/projects/esp/esp-idf/export.sh'
+
+# ------------------  FZF  ------------------
+source $HOME/.config/zsh/fzf.zsh
