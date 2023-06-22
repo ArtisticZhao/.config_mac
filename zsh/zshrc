@@ -78,7 +78,10 @@ export EDITOR=nvim
 # ------------------  alias  ------------------
 alias sz="source ~/.zshrc"
 alias c="clear"
-alias ll="ls -la"
+# ls
+alias ls='exa'
+alias l='exa -l --color auto -h --icons --git'
+alias ll='exa -l --color auto -h --icons -a --git'
 # alias of programs
 alias t="tmux"
 alias ctags="`brew --prefix`/bin/ctags"
@@ -86,6 +89,7 @@ alias vim="nvim"
 alias lg="lazygit"
 alias ra="joshuto"
 alias p="proxychains4"
+alias cat="bat"
 # venv of python
 alias sv="source .venv/bin/activate"
 alias dv="deactivate"

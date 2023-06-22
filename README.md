@@ -14,6 +14,9 @@
 2. `ln -s $HOME/.config/zsh/dotzshrc $HOME/.zshrc`
 3. `source ~/.zshrc`  
   The zim framework and zsh plugins will installed automatically.
+4. Install requirements.  
+  `brew install exa` for pretty ls
+  `brew install bat` for cat
 
 ### tmux
 1. `brew install tmux`
