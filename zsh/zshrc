@@ -63,6 +63,7 @@ setopt automenu
 unsetopt nomatch
 
 # ------------------  ENV  ------------------
+export XDG_CONFIG_HOME="$HOME/.config"
 PATH="$PATH:/opt/homebrew/bin"
 PATH="$PATH:/Users/az/Library/Python/3.9/bin"
 PATH="$PATH:/Users/az/.cargo/bin"

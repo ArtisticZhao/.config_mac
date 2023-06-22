@@ -5,6 +5,7 @@
 - tmux
 - joshuto
 - fzf
+- lazygit
 
 ## Install
 
@@ -34,6 +35,12 @@
 3. Install requirements: fd, rg.  
   `brew install fd` for fast find  
   `brew install rg` for grep content in files  
+
+### lazygit
+1. Install lazygit  
+  `brew install lazygit`
+2. Install git-delta to show diff  
+  `brew install git-delta`
 
 ## Usage
 
