@@ -100,3 +100,19 @@ alias get_idf='. $HOME/projects/esp/esp-idf/export.sh'
 
 # ------------------  FZF  ------------------
 source $HOME/.config/zsh/fzf.zsh
+# ------------------ Plugins ----------------
+# -- zsh-history-substring-search
+# Use up/down arrow to search history.
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+# bindkey '^R' history-incremental-pattern-search-backward
+bindkey -M vicmd 'k' history-substring-search-up
+bindkey -M vicmd 'j' history-substring-search-down
+# -- zsh-autosuggestions
+# 按-> 全部补全
+# 按ctrl+w 前进一个单词
+# 按ctrl+e 后退并删除一个单词
+bindkey '^W' forward-word
+bindkey '^E' backward-delete-word
+# -- z.lua
+alias zb='z -b'
