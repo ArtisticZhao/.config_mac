@@ -27,3 +27,4 @@ zmodule zsh-users/zsh-autosuggestions
 
 # z.lua jump like plugin
 zmodule skywind3000/z.lua
+
