@@ -21,7 +21,7 @@
 ### tmux
 1. `brew install tmux`
 2. Install tpm  
-  `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
+  `git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm`
 3. Install tmux plugins by tpm  
   Go tmux press `<tmux-prefix>I` to install plugins of tmux.
 4. Merge my tmux-powerline theme  
