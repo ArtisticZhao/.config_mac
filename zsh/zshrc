@@ -69,7 +69,7 @@ PATH="$PATH:/Users/az/Library/Python/3.9/bin"
 PATH="$PATH:/Users/az/.cargo/bin"
 export PATH
 
-export ALL_PROXY=127.0.0.1:7890
+export ALL_PROXY=127.0.0.1:51996
 export http_proxy="http://127.0.0.1:7890"
 export https_proxy="http://127.0.0.1:7890"
 export HOMEBREW_NO_AUTO_UPDATE=true
