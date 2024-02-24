@@ -116,7 +116,6 @@ bindkey '^W' forward-word
 bindkey '^E' backward-delete-word
 # -- z.lua
 alias zb='z -b'
-
 # ------------------  vimode  ------------------
 function zle-keymap-select {
   # 调用minimal主题的外观函数
