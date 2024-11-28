@@ -1,7 +1,0 @@
-# ignore everything
-/*
-/*/
-
-# ... but these:
-!/.gitignore
-!/.zimrc

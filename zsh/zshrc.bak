@@ -1,0 +1,48 @@
+#                              _
+#                      _______| |__  _ __ ___
+#                     |_  / __| '_ \| '__/ __|
+#                      / /\__ \ | | | | | (__
+#                     /___|___/_| |_|_|  \___|
+
+
+# ------------------  ENV  ------------------
+export XDG_CONFIG_HOME="$HOME/.config"
+PATH="$PATH:/opt/homebrew/bin"
+PATH="$PATH:/Users/az/Library/Python/3.9/bin"
+PATH="$PATH:/Users/az/.cargo/bin"
+export PATH
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+
+export HOMEBREW_NO_AUTO_UPDATE=true
+export EDITOR=nvim
+
+# ------------------  alias  ------------------
+alias sz="source ~/.zshrc"
+alias c="clear"
+# alias of programs
+alias t="tmux"
+alias ctags="`brew --prefix`/bin/ctags"
+alias vim="nvim"
+alias lg="lazygit"
+alias ra="joshuto"
+alias p="proxychains4"
+alias cat="bat"
+# venv of python
+alias sv="source .venv/bin/activate"
+alias dv="deactivate"
+# git
+alias gc="git clone"
+
+
+# support Home and End
+bindkey "\e[1~" beginning-of-line  # Home
+bindkey "\e[4~" end-of-line        # End
+bindkey "\e[H" beginning-of-line   # Home
+bindkey "\e[F" end-of-line         # End
+
+
+ts2mp4() {
+    for file in *.ts; do
+        ffmpeg -i "$file" -c copy "${file%.*}.mp4"
+    done
+}

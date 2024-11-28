@@ -1,8 +1,12 @@
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
+#!/bin/bash
+source ~/.config/zsh/env.sh
+
 # ------------------  Initialize of ZIM ------------------
+zstyle ':zim:zmodule' use 'degit'
+ZIM_CONFIG_FILE=~/.config/zsh/zimrc
 ZIM_HOME=~/.config/zsh/zim
-ZDOTDIR=~/.config/zsh/zim
+# 存储历史到文件中
+HISTFILE=~/.zsh_history
 
 # Download zimfw plugin manager if missing.
 if [[ ! -e ${ZIM_HOME}/zimfw.zsh ]]; then
@@ -18,11 +22,11 @@ fi
 # Initialize modules.
 source ${ZIM_HOME}/init.zsh
 
-# ------------------  My config of zsh  ------------------
-source ~/.config/zsh/zshrc
 
+# ------------------  End of ZIM initialization ------------------
+source ~/.config/zsh/alias_keymap.sh
+source ~/.config/zsh/cmd.sh
 
-export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
